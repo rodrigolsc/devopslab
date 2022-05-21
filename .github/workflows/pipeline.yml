@@ -21,8 +21,16 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Requirements
+<<<<<<< HEAD
+        run:  pip install flask flask-wtf
+
+      - name: Install Requirements
+        run:  pip install flask   
+              
+=======
         run:  pip install flask
 
+>>>>>>> 9bcc16aa160b2d7cda2b5e62f5addedb2377e3da
       - name: Unit Test
         run: python -m unittest -v test
 
